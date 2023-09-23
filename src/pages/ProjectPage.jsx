@@ -1,4 +1,4 @@
-export default function ResumePage() {
+export default function ProjectPage() {
   return (
     <div className="container pt-4">
       <h2></h2>

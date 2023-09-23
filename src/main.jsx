@@ -1,44 +1,43 @@
-import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-// import 'bootstrap/dist/css/bootstrap.min.css';
-
+import './index.css';
 
 // Bringing in the pages the router will use to conditionally show the appropriate views
-import App from './App';
-import ErrorPage from './pages/ErrorPage';
-import WorksPage from './pages/WorksPage';
-import AboutPage from './pages/AboutPage';
-import ContactPage from './pages/AboutPage';
-import ResumePage from './pages/AboutPage';
+import App from "./App";
+import ErrorPage from "./pages/ErrorPage";
+import ProjectPage from "./pages/ProjectPage";
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
+import ResumePage from "./pages/ResumePage";
 
 const router = createBrowserRouter([
   {
-    path: '/',
-    element: <App/>,
-    errorElement: <ErrorPage/>,
+    path: "/",
+    element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
-        element: <AboutPage/>
+        element: <AboutPage />,
       },
       {
-        path: 'works',
-        element: <WorksPage/>
+        path: "project",
+        element: <ProjectPage />,
       },
       {
-        path: 'contact',
-        element: <ResumePage/>
+        path: "contact",
+        element: <ContactPage />,
       },
       {
-        path: 'resume',
-        element: <ContactPage/>
-      }
-    ]
-  }
+        path: "Resume",
+        element: <ResumePage />,
+      },
+    ],
+  },
 ]);
 
 // Render the RouterProvider component
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <RouterProvider router={router} />
 );
