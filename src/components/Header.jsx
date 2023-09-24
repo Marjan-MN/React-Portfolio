@@ -1,11 +1,11 @@
-export default function Header(){
-    
-    return (
-        <>
-        <div className="main-header">
-        <div> <img src="./assets/Untiled-2.svg" alt="logo" /></div>
-        
+export default function Header() {
+  return (
+    <>
+      <div className="main-header">
+        <div>
+          <img src="./assets/logo.svg" alt="logo" />
         </div>
-        </>
-    )
+      </div>
+    </>
+  );
 }
