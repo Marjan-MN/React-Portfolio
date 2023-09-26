@@ -25,14 +25,14 @@
   align-items: center;
   background: #c3c6ff;
   width: 100%;
-  height: 60px;
+  height: 30px;
 }
 
 .main-footer {
   margin: 0%;
   padding: 0%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 250px;
@@ -40,7 +40,7 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  text-decoration: underline 2px;
   text-decoration: inherit;
 }
 
@@ -111,14 +111,11 @@ button:focus-visible {
 }
 
 
-.about-container {
-  margin: 200px;
-
-}
 
 .container-resume {
   margin: 100px;
-  height: 350px;
+  margin-bottom: -50px;
+
 }
 
 .form-container {
@@ -128,6 +125,41 @@ button:focus-visible {
 .container-project {
   margin: 100px;
   height: 350px;
+}
+
+.project-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 2;
+
+}
+
+.about-container {
+  margin: 100px;
+  margin-left: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.me {
+  width: 200px;
+  display: inline;
+  margin-right: 100px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.about-text {
+  display: inline;
+}
+
+.git {
+  color: #f9f9f9;
+  margin: 10px;
+}
+
+.git:hover {
+  color: #646cff;
 }
 
 .input-name {
@@ -166,6 +198,7 @@ button:focus-visible {
 
 .projectContainer {
   position: relative;
+  margin: 50px;
 }
 
 .projectOverlay {
@@ -179,7 +212,7 @@ button:focus-visible {
   background-color: var(--overlay);
   opacity: 0;
   color: white;
-  font-size: 20px;
+  font-size: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -191,9 +224,25 @@ button:focus-visible {
 
 }
 
-.icon{
-  width: 50px;
-    height: auto;
-    float: right;
-    background: transparent;
+.icon {
+  width: 30px;
+  margin: 20px;
+  height: auto;
+  float: right;
+  background: transparent;
+}
+
+.icon :hover {
+  color: var(--overlay);
+  width: 30px;
+  margin: 20px;
+  height: auto;
+  float: right;
+  background: transparent;
+}
+
+.logo {
+  width: 60px;
+  margin-left: 100px;
+  margin-top: 150px;
 }

@@ -1,7 +1,7 @@
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import './index.css';
+import "./index.css";
 
 // Bringing in the pages the router will use to conditionally show the appropriate views
 import App from "./App";
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        path: "/",
+        path: "/about",
         element: <AboutPage />,
       },
       {

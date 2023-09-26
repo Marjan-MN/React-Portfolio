@@ -1,10 +1,11 @@
 export default function ResumePage() {
   return (
     <div className="container-resume pt-4">
+
       <h2>Resume</h2>
-      <a href="https://docs.google.com/document/d/10njbw5oY79Z_-qwJoNwn8DnvXrJ-W9FTPW_xWRNdpv8/edit?usp=sharing">
-        Download my Resume
-      </a>
+      
+        Download my <span className="yellow"><a href="https://docs.google.com/document/d/10njbw5oY79Z_-qwJoNwn8DnvXrJ-W9FTPW_xWRNdpv8/edit?usp=sharing">Resume.</a></span>
+      
       <br />
       <br />
       <h3>Technical Skills</h3>
