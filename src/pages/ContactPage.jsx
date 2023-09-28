@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import { useForm } from "react-hook-form";
+// function to create a contact form and setting to get err notice
 export default function ContactForm() {
   const {
     register,

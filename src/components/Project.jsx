@@ -1,3 +1,4 @@
+// rendering progect component
 import { FaGithub } from "react-icons/fa";
 export default function Project() {
   return (
@@ -17,9 +18,12 @@ export default function Project() {
       </a>
       <a href="#" className="projectContainer">
         <div className="lifeManager">
-          <div className="projectOverlay">Life Manager <a href="https://github.com/Marjan-MN/Life-Manager">
+          <div className="projectOverlay">
+            Life Manager{" "}
+            <a href="https://github.com/Marjan-MN/Life-Manager">
               <FaGithub className="git" />
-            </a></div>
+            </a>
+          </div>
         </div>
       </a>
     </>

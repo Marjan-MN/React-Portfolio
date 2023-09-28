@@ -1,3 +1,4 @@
+// Importing icone to add in footer component
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 export default function Footer() {
   return (

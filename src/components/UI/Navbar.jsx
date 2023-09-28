@@ -1,3 +1,4 @@
+// Creating navbar link component
 export default function Nav({ links }) {
   return (
     <nav className="navbar navbar-expand-lg bg-secondary">
